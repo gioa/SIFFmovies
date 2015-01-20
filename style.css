@@ -1,0 +1,216 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* home page elements */
+html {
+	margin: 0;
+	padding: 0;
+	
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	padding:50px;
+	height:100px;
+	background-color:#58caeb;
+}
+
+#menu{
+	padding: 30px 0px 30px 0px;
+	border-bottom: 1px solid #aaa;
+}
+
+#menu span{
+	padding-left:50px;
+}
+
+
+
+#date{
+	display:inline-block;
+	width: 44px;
+    height: 44px;  	
+    background:url(images/sprite.png) -44px 0;
+	vertical-align:middle;
+}	
+#cinema{
+	display:inline-block;
+	width: 44px;
+    height: 44px;  	
+    background:url(images/sprite.png) -44px 0;
+	vertical-align:middle;
+}
+
+/* Movies css*/
+.movie{
+	padding:20px 20px 20px 50px;
+	border-bottom: 1px solid #aaa;
+	
+}
+.enter{
+    display:inline-block;
+    position:relative;
+    top:70px;
+	width: 44px;
+    height: 44px;  
+    float:right;
+    background:url(images/sprite.png) -88px 0;
+}
+
+.movieimage{
+	width:40%;
+	display: inline-block;
+ 
+ 
+}
+.time{
+	
+	padding-bottom:30px;
+}
+
+.left{
+	padding-left:20px;
+	display: inline-block;
+ 
+}
+
+
+.bottom{
+	padding-top:30px;
+	color:#58caeb;
+	display:inline-block;
+}
+
+.bottom span{
+	padding-right:50px;
+}
+
+
+
+
+.locationimage{
+    display: inline-block;
+	width: 44px;
+    height: 44px;  	
+    background:url(images/sprite.png) -176px 0;
+	vertical-align:middle;
+  
+}
+.scheduleimage{
+	display: inline-block;
+	width: 44px;
+    height: 44px;  	
+    background:url(images/sprite.png) -132px 0;
+	vertical-align:middle;
+	
+}
+
+footer{
+	text-align: center;
+	padding:30px;
+	background-color:#363636;
+	color: #fff;
+}
+
+
+/* subpage elements */
+.subpageheader{
+	padding:20px 50px 20px 50px;
+	height:30px;
+	background-color:#58caeb;
+	
+}
+#title{
+	font-size:1.8em;
+	position:absolute;
+	left:40%;
+}
+.submovie{
+	width:100%;
+	height: 300px;
+	background:url(images/CitizenFour_400x222.jpg);
+
+ 	 background-repeat: no-repeat;
+  	background-size: cover;
+}
+#back{
+	display:inline-block;
+	width: 44px;
+    height: 44px;  	
+    background:url(images/sprite.png) 0 0;
+	vertical-align:middle;
+	position:relative;
+	top:-8px;
+}
+
+#pagetime, #pagedirector, #pageintro, #pageshedule,#pagelocation{
+	margin:0px 50px 0px 50px;
+	padding: 20px 0px 20px 0px;
+}
+#pageintro{
+	color:#6f6767;
+}
+#pagetime{
+	font-size:1.5em;
+	padding-bottom:10px;
+}
+#pagedirector{
+	padding-top:10px;
+	font-size:1.2em;
+}
+
+#pagelocation{
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	color:#58caeb;
+}
+
+#pageshedule span {
+	color: #58caeb;
+	padding-right:30px;
+	line-height:1.5;
+}
+#pageshedule span strong{
+	color:black;
+}
+
+#pagelocationicon{
+    display: inline-block;
+	width: 44px;
+    height: 44px;  	
+    background:url(images/sprite.png) -176px 0;
+	vertical-align:middle;
+	padding-right:10px;
+}
+
+#pagetimeicon{
+    display: inline-block;
+	width: 44px;
+    height: 44px;  	
+    background:url(images/sprite.png) -132px 0;
+    padding-right:10px;
+}
+#pageshowdates{
+	padding-top:11px;
+	display: inline-block;
+	vertical-align:top;
+}
+
+#datespan, #locationspan {
+	display:none;
+	padding-top:10px;
+}
+
+.selected {
+	color: #58caeb;
+}

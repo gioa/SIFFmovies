@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SIFF Now Playing 5 Movies</title>
+    <link rel="stylesheet" media="screen" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+ </script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="page-wrapper">
+
+	
+		<header>
+			<img id="logo" src="siff.png"></img>
+		</header>
+
+		<div id="menu" role="article" >
+		<span>NOW PLAYING</span>
+		
+		<span>JAN6</span><div id="date"></div>
+		<span >All Location</span><div id="cinema"></div>
+
+		<p id="datespan"><span class="selected">JAN 6</span><span>JAN 7</span><span>JAN 8</span></p>
+		<p id="locationspan"><span class="selected">All</span><span>SIFF Cinema Egyptian</span><span>SIFF Cinema Uptown</span></p>
+		
+		</div>
+
+		<div class="movie">
+		
+			<img class="movieimage" src="images/Interview_400x222.jpg"></img>
+		
+			<div class="left">
+				<h3>The Interview</h3>
+				<div class="time">2014 | 120 Minutes | R</div>
+				<div><strong>DIRECTOR:</strong><br>Seth Rogen, Evan Goldberg</div>
+			</div>
+			
+			<div class="enter"></div>
+			
+			<div class="bottom">
+			    <div class="locationimage"></div>
+			    <span class="location">SIFF Cinema Egyptian</span>
+			    
+				<div class="scheduleimage"></div>				
+				<span class="schedule">19:10</span><span>21:40</span>
+			</div>
+			
+		</div>
+
+
+
+		<div class="movie">
+		
+			<img class="movieimage" src="images/CitizenFour_400x222.jpg"></img>
+		
+			<div class="left">
+				<h3>CitizenFour</h3>
+				<div class="time">2014 | 120 Minutes</div>
+				<div><strong>DIRECTOR:</strong><br>Laura Poitras</div>
+			</div>
+			<div class="enter"></div>
+			
+			<div class="bottom">
+				<div class="locationimage"></div>
+				<span class="location">SIFF Cinema Uptown</span>
+				<div class="scheduleimage"></div>
+				<span class="schedule">16:30</span>
+			</div>
+		</div>
+		
+		
+	    <div class="movie">
+		
+			<img class="movieimage" src="images/IntotheWoods_400x222.jpg"></img>
+		
+			<div class="left">
+				<h3>Into the Woods</h3>
+				<div class="time">2014 | 120 Minutes | PG</div>
+				<div><strong>DIRECTOR:</strong><br>Rob Marshall</div>
+			</div>
+			<div class="enter"></div>
+			
+			<div class="bottom">
+				<div class="locationimage"></div>
+				<span class="location">SIFF Cinema Uptown</span>
+				<div class="scheduleimage"></div>
+				<span class="schedule">18:30</span><span>21:10</span>
+			</div>
+		</div>
+		
+				
+	    <div class="movie">
+		
+			<img class="movieimage" src="images/Imitation Game_400x222.jpg"></img>
+		
+			<div class="left">
+				<h3>The Imitation Game</h3>
+				<div class="time">2014 | 120 Minutes | PR-13</div>
+				<div><strong>DIRECTOR:</strong><br>Morten Tyldum</div>
+			</div>
+			<div class="enter"></div>
+			
+			<div class="bottom">
+				<div class="locationimage"></div>
+				<span class="location">SIFF Cinema Uptown</span>
+				<div class="scheduleimage"></div>
+				<span class="schedule">19:10</span><span>21:40</span>
+			</div>
+		</div>
+
+		
+	    <div class="movie">
+		
+			<img class="movieimage" src="images/Wild_400x222.jpg"></img>
+		
+			<div class="left">
+				<h3>Wild</h3>
+				<div class="time">2014 | 120 Minutes | R</div>
+				<div><strong>DIRECTOR:</strong><br>Jean-Marc Vallee</div>
+			</div>
+			<div class="enter"></div>
+			
+			<div class="bottom">
+				<div class="locationimage"></div>
+				<span class="location">SIFF Cinema Uptown</span>
+				<div class="scheduleimage"></div>
+				<span class="schedule">19:10</span><span>21:40</span>
+			</div>
+		</div>
+		
+		<footer>
+			<span>Copyright @ SIFF, 2015</span><br>
+			<span>All right reserved.</span>
+		</footer>
+	
+	<script type="text/javascript">
+    $(document).ready(function(){        
+            $('#date').click(function(){
+            		if(!$('#locationspan').is("::hidden")){
+                		$('#locationspan').hide();
+                		$('#cinema').css("background", "url(images/sprite.png) -44px 0");
+                	}
+                	
+                	if($('#datespan').is("::hidden")){
+                		$('#date').css("background", "url(images/sprite.png) -220px 0");
+                	}else{
+                		$('#date').css("background", "url(images/sprite.png) -44px 0");
+                	}
+                	
+                	$('#datespan').slideToggle();
+                	
+                
+                	
+                	
+                        
+           });
+        
+        
+        	  $('#cinema').click(function(){
+        	  	if(!$('#datespan').is("::hidden")){
+                		$('#datespan').hide();
+                		$('#date').css("background", "url(images/sprite.png) -44px 0");
+                	}
+        	  
+        	  
+                	
+                	if($('#locationspan').is("::hidden")){
+                		$('#cinema').css("background", "url(images/sprite.png) -220px 0");
+                	}else{
+                		$('#cinema').css("background", "url(images/sprite.png) -44px 0");
+                	}
+                	$('#locationspan').slideToggle();
+                        
+           });
+           
+           $(".enter").click(function(){
+           			window.open ('movie.html','_self',false)
+           	
+           });
+        
+        })
+
+
+  </script>  	
+</body>		
+		
+		
